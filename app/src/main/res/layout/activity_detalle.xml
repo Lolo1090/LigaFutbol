@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lolo.ligafutbol.Detalle_Activity">
+
+    <ImageView
+        android:id="@+id/fotoEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/txtGolesFavor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/fotoEquipo"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="39dp"
+        android:text="Goles a favor"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txtGolesContra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtGolesFavor"
+        android:layout_alignStart="@+id/txtGolesFavor"
+        android:layout_below="@+id/txtGolesFavor"
+        android:layout_marginTop="25dp"
+        android:text="Goles en contra"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txtRojas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtGolesContra"
+        android:layout_alignStart="@+id/txtGolesContra"
+        android:layout_below="@+id/txtGolesContra"
+        android:layout_marginTop="22dp"
+        android:text="Rojas"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txtAmarillas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amarillas"
+        android:textSize="24sp"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/txtRojas"
+        android:layout_alignLeft="@+id/txtRojas"
+        android:layout_alignStart="@+id/txtRojas" />
+
+    <TextView
+        android:id="@+id/txtWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtRojas"
+        android:layout_alignStart="@+id/txtRojas"
+        android:layout_alignTop="@+id/txtAmarillas"
+        android:layout_marginTop="56dp"
+        android:text="WEB"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/golesFavor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtGolesFavor"
+        android:layout_alignBottom="@+id/txtGolesFavor"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="47dp"
+        android:layout_marginRight="47dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        tools:text="23" />
+
+    <TextView
+        android:id="@+id/golesContra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="56"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/txtGolesContra"
+        android:layout_alignBottom="@+id/txtGolesContra"
+        android:layout_alignLeft="@+id/golesFavor"
+        android:layout_alignStart="@+id/golesFavor" />
+
+    <TextView
+        android:id="@+id/rojas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/txtRojas"
+        android:layout_alignBottom="@+id/txtRojas"
+        android:layout_alignLeft="@+id/golesContra"
+        android:layout_alignStart="@+id/golesContra" />
+
+    <TextView
+        android:id="@+id/amarillas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/txtAmarillas"
+        android:layout_alignBottom="@+id/txtAmarillas"
+        android:layout_alignLeft="@+id/rojas"
+        android:layout_alignStart="@+id/rojas" />
+
+    <Button
+        android:id="@+id/btnWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/txtWeb"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:text="IR" />
+
+    <Button
+        android:id="@+id/btnCr7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIIIIUU!!"
+        android:layout_alignBaseline="@+id/btnWeb"
+        android:layout_alignBottom="@+id/btnWeb"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
